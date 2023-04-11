@@ -26,7 +26,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Integration Envirnoment Run (No Protection Rule)!
+        run: echo Integration Envirnoment Run No Protection Rule
         
   Prod_Env_Run:
     needs: Integration_Env_Run
@@ -39,6 +39,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Production Envirnoment Run (with Wait time of 1 min)!  
+        run: echo Production Envirnoment Run -with Wait time of 1 min 
         
       
