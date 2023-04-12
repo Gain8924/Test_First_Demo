@@ -5,8 +5,8 @@ name: Act_on_release
 # Controls when the workflow will run
 on:
  release:
-    types: [published]
-    branches: [ "Development"]
+    types: [ "released", "published" ]
+    
   # Triggers the workflow on push or pull request events but only for the "main" branch
 
   # Allows you to run this workflow manually from the Actions tab
