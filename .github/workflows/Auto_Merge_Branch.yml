@@ -41,6 +41,7 @@ jobs:
         
  
   Merge-branch:
+    needs: Prod_Env_Run
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
