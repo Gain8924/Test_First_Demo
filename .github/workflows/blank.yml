@@ -1,0 +1,18 @@
+name: Merge Branch
+
+on:
+  workflow_dispatch:
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Merge branch
+        run: |
+          git config user.name "Gain8924"
+          git config user.email "gjain8924@gmail.com"
+          git checkout Gain8924-patch-3
+          git merge main
+          git push
