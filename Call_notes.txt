@@ -1,0 +1,27 @@
+ : what is our release process ?
+ : What your process is ? 
+  ( How docker image is created , what is required - is there any tool , What you use for deployment ?) 
+is jenkin just integration tool
+how we will cater to this 
+
+In our process - 
+1. How are we going to define a build project from Gitrepo for Azure Artifcate
+ (Example - Maven project etc)
+
+
+Steps- 
+Build Maven project (any project )
+Create docker file which says what to take as a reference to create a docker image , Can be a Jar file etc.
+Build Docker image
+
+Push to Docker register , Login and push .
+
+Deploy plugin Required.
+
+Deploy option in step for Azure synpase related
+
+We dont use container Instances - So no option of Deploying to aure container instance, Kubernates
+
+Different steps in Jenkin like checkout github repo 
+Create a project with installation - Clean install
+
