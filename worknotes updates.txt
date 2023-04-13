@@ -1,0 +1,7 @@
+- Call with Arnab , He has got a important meeting.
+
+---------------------------------------------------------------------------------------------
+1. Current process - documented on technical level , how we do it . Also what we will require ... 
+2 .Jenkin with Github ... Kind of clear what they are doing at high level but question still remains 
+if it would fit in our case .So , in call with arnab.
+2.Gut hub Actions -Drafting the Steps. Gary would you like to setup something . Let me know if before call with arna
