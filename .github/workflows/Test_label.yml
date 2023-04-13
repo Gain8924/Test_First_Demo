@@ -1,0 +1,25 @@
+name: Label
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add label
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const labelsToAdd = ['To be Approved', 'Release'];
+            const issue = context.payload.issue || context.payload.pull_request;
+            const owner = issue.repository.owner.login;
+            const repo = issue.repository.name;
+            await github.issues.addLabels({
+              owner,
+              repo,
+              issue_number: issue.number,
+              labels: labelsToAdd
+            });
